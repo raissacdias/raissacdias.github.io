@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raíssa Gonçalves C. Dias | Resume</title>
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #5b4b8a;
+      --accent-soft: #ede9fe;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #f8f7fc 0%, #f7f8fb 100%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 32px auto;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 14px 40px rgba(17, 24, 39, 0.06);
+    }
+
+    .hero {
+      padding: 40px;
+      background: linear-gradient(135deg, #faf7ff 0%, #ffffff 55%, #f7f8fb 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .name {
+      margin: 0;
+      font-size: 2.25rem;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+    }
+
+    .headline {
+      margin: 10px 0 0;
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .top-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr;
+      gap: 0;
+    }
+
+    .main {
+      padding: 34px 40px 40px;
+    }
+
+    .side {
+      padding: 34px 32px 40px;
+      background: #fcfcfe;
+      border-left: 1px solid var(--line);
+    }
+
+    section + section {
+      margin-top: 30px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .summary {
+      color: #374151;
+      font-size: 1rem;
+    }
+
+    .job {
+      padding: 0 0 22px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 22px;
+    }
+
+    .job:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .job-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+
+    .job-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .company {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .date {
+      white-space: nowrap;
+      font-size: 0.92rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 12px 0 0 18px;
+      padding: 0;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .small-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .skill-group {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+    }
+
+    .skill-group strong {
+      display: block;
+      font-size: 0.92rem;
+      margin-bottom: 6px;
+    }
+
+    .skill-group span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .edu-card, .contact-card {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+    }
+
+    .contact-card a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    @media (max-width: 860px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .side {
+        border-left: none;
+        border-top: 1px solid var(--line);
+      }
+
+      .hero, .main, .side {
+        padding: 26px;
+      }
+
+      .job-head {
+        flex-direction: column;
+      }
+
+      .date {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <h1 class="name">Raíssa Gonçalves C. Dias</h1>
+      <p class="headline">Client Partner and Account Manager with a strong strategic perspective and growing focus on product development. Working at the intersection of Customer Success, revenue expansion, product thinking and AI-enabled workflows. 8+ years supporting high-growth SaaS and fintech companies through strategic accounts, consulting projects and cross-functional product initiatives. Open to remote roles in Brazil and Portugal.</p>
+      <div class="top-meta">
+        <span class="pill">São Paulo, Brazil</span>
+        <span class="pill">Portuguese | English | Spanish</span>
+        <span class="pill">Customer Success + Revenue Expansion + Strategy</span>
+      </div>
+    </header>
+
+    <div class="layout">
+      <main class="main">
+        <section>
+          <h2>Professional Summary</h2>
+          <p class="summary">Economist with a strong strategic perspective and growing expertise in product development, customer strategy and data-driven decision making. Experienced in partnering with leadership teams to structure growth initiatives, improve customer outcomes and deliver complex projects involving compensation, organizational design and scalable people operations. Combines commercial ownership with cross-functional execution across consulting, product and operations.</p>
+        </section>
+
+        <section>
+          <h2>Professional Experience</h2>
+
+          <article class="job">
+            <div class="job-head">
+              <div>
+                <h3 class="job-title">Client Partner (Account Manager)</h3>
+                <p class="company">Comp</p>
+              </div>
+              <div class="date">Jun 2025 – Present</div>
+            </div>
+            <p class="muted">AI-native HR function backed by Khosla Ventures, Kaszek and Canary. First investment by Khosla Ventures in Latin America. Serving 150+ companies including Nubank and iFood, helping fast-growing organizations redesign People operations through AI-powered workflows, compensation strategy and organizational design.</p>
+            <ul>
+              <li>Manage strategic client accounts across fintech and technology companies including Logcomex, Avenue, Valid and ASAAS, partnering with HR and leadership teams on compensation and organizational design initiatives.</li>
+              <li>Lead projects involving compensation benchmarking, salary architecture design, incentive frameworks and merit cycle implementation.</li>
+              <li>Coordinate cross-functional work across HR specialists, engineers and product teams to deliver tailored solutions embedded within client organizations.</li>
+              <li>Identify expansion opportunities within existing accounts, supporting revenue growth through new projects and broader platform adoption.</li>
+              <li>Support scaling companies in building structured People operations aligned with rapid organizational growth.</li>
+              <li>Structure new AI-enabled product initiatives from client needs, translating business problems into product requirements and coordinating delivery with engineering teams.</li>
+              <li>Design customized AI workflows using prompt engineering with tools such as Claude and Claude Code, creating tailored chat prompts and reusable skill configurations for client use cases.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <div>
+                <h3 class="job-title">Senior Coordinator</h3>
+                <p class="company">Endeavor</p>
+              <p class="muted">Global organization supporting high-impact entrepreneurs, operating in 40+ countries through mentorship, strategic advisory and access to a worldwide business and investor network.</p>
+              </div>
+              <div class="date">2023 – 2025</div>
+            </div>
+            <ul>
+              <li>Managed relationships with founders and leadership teams from high-growth companies within Endeavor’s network.</li>
+              <li>Led and developed junior and senior analysts, providing ongoing feedback, performance evaluations and professional development support.</li>
+              <li>Participated in hiring processes including interviewing candidates and supporting onboarding of new team members.</li>
+              <li>Handled team management responsibilities including performance feedback, difficult conversations and offboarding processes when necessary.</li>
+              <li>Coordinated strategic projects and executive interactions involving founders, mentors, investors and ecosystem stakeholders.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <div>
+                <h3 class="job-title">Account Manager</h3>
+                <p class="company">Endeavor</p>
+              </div>
+              <div class="date">2021 – 2023</div>
+            </div>
+            <ul>
+              <li>Partnered with entrepreneurs from scale-up companies, supporting relationship management and the execution of strategic programs.</li>
+              <li>Helped connect founders with relevant specialists, mentors and business opportunities through Endeavor’s network.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <div>
+                <h3 class="job-title">Senior Consultant &amp; Account Manager</h3>
+                <p class="company">Reev</p>
+              <p class="muted">Brazilian SaaS company focused on sales engagement and revenue growth, helping businesses improve outbound sales performance and commercial operations.</p>
+              </div>
+              <div class="date">2018 – 2021</div>
+            </div>
+            <ul>
+              <li>Led consulting engagements lasting 6 to 18 months helping client companies redesign and scale their sales processes.</li>
+              <li>Implemented sales development and revenue operations frameworks based on the Predictable Revenue methodology.</li>
+              <li>Worked closely with leadership teams to structure outbound sales processes, SDR operations and pipeline generation strategies.</li>
+              <li>Managed client relationships throughout the consulting lifecycle, coordinating diagnosis, implementation and performance improvement initiatives.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section>
+          <h2>Additional Experience</h2>
+
+          <article class="job">
+            <div class="job-head">
+              <div>
+                <h3 class="job-title">Student Consultant</h3>
+                <p class="company">UFMG Consultoria Jr.</p>
+              </div>
+              <div class="date">2016 – 2017</div>
+            </div>
+            <p class="muted">Student consulting organization delivering business and strategy projects for companies.</p>
+            <ul>
+              <li>Conducted market studies and economic feasibility analyses for client companies.</li>
+              <li>Led a consulting project redesigning business processes and structuring the HR department for a financial services company.</li>
+              <li>Participated in trainee evaluation processes and supported candidate development programs.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <div>
+                <h3 class="job-title">Work & Travel Program</h3>
+                <p class="company">YMCA of the Rockies</p>
+              </div>
+              <div class="date">2017</div>
+            </div>
+            <p class="muted">International work experience program in the United States focused on cultural exchange and customer service.</p>
+            <ul>
+              <li>Worked in hospitality operations providing customer service and supporting day-to-day restaurant activities.</li>
+              <li>Gained international work experience while studying Economics at UFMG.</li>
+            </ul>
+          </article>
+        </section>
+
+      </main>
+
+      <aside class="side">
+        <section>
+          <h2>Core Skills</h2>
+          <div class="small-list">
+            <div class="skill-group">
+              <strong>Commercial & Client</strong>
+              <span>Strategic Account Management, Customer Success, Revenue Expansion, Stakeholder Management</span>
+            </div>
+            <div class="skill-group">
+              <strong>Business & Strategy</strong>
+              <span>Strategic Thinking, Business Analysis, Customer Journey, Compensation Strategy, Organizational Design</span>
+            </div>
+            <div class="skill-group">
+              <strong>Product</strong>
+              <span>Product Thinking, Product Discovery, Translating Business Problems into Product Requirements, AI-enabled Product Workflows</span>
+            </div>
+            <div class="skill-group">
+              <strong>Execution</strong>
+              <span>Cross-functional Collaboration, Project Coordination, Executive Communication, SaaS</span>
+            </div>
+            <div class="skill-group">
+              <strong>AI & Prompt Engineering</strong>
+              <span>Prompt Engineering, Claude, Claude Code, Custom AI Workflows, AI Chat Configuration, Client-specific AI Skill Design</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Tools</h2>
+          <div class="skill-group">
+            <span>Excel, PowerPoint, Google Docs, Google Drive, Salesforce, HubSpot, Power BI, Looker Studio, SQL</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <div class="edu-card" style="margin-bottom:12px;">
+            <strong>MBA in Digital Product Leadership (In Progress)</strong>
+            <div class="muted">Tera | Mar 2026 – Dec 2026</div>
+            <div class="muted" style="margin-top:6px;">Executive program focused on product strategy, leadership and the use of AI in digital product development. Covers product discovery, business strategy, experimentation, metrics, and cross‑functional product leadership through practical projects and industry-led sessions.</div>
+          </div>
+          <div class="edu-card">
+            <strong>Bachelor’s Degree in Economics</strong>
+            <div class="muted">Brazil</div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Languages</h2>
+          <div class="skill-group">
+            <span>Portuguese (Native)<br>English (Advanced)<br>Spanish (Intermediate)</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <div class="contact-card">
+            <div>Email: raissaalmeidag@gmail.com</div>
+            <div style="margin-top: 8px;">LinkedIn: <a href="https://www.linkedin.com/in/ra%C3%ADssa-gon%C3%A7alves/">linkedin.com/in/raíssa-gonçalves</a></div>
+            <div style="margin-top: 8px;" class="muted">Open to remote opportunities in Brazil and Portugal.</div>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
